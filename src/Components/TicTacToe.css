@@ -1,0 +1,117 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #62b6cb;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #1a3e4c;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.turn-indicator {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1a3e4c;
+}
+
+    .turn-indicator p {
+        margin: 0;
+    }
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #62b6cb;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.box {
+    aspect-ratio: 1;
+    background-color: antiquewhite;
+    border: 3px solid #8b5a2b;
+    border-radius: 12px;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: crimson;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .box:hover:not(:disabled) {
+        background-color: #ffe4c4;
+        transform: scale(1.02);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .box:disabled {
+        cursor: not-allowed;
+        opacity: 0.9;
+    }
+
+    /* X and O colors */
+    .box[value="X"] {
+        color: #e74c3c;
+    }
+
+    .box[value="O"] {
+        color: #2ecc71;
+    }
+
+.reset-btn {
+    margin-top: 30px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: brown;
+    background-color: bisque;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+    .reset-btn:hover {
+        background-color: #ffdead;
+        transform: scale(1.05);
+    }
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .game-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .box {
+        font-size: 2rem;
+    }
+
+    .turn-indicator {
+        font-size: 1rem;
+    }
+}

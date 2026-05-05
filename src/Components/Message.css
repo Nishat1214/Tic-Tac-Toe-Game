@@ -1,0 +1,28 @@
+.msg-container {
+    background-color: #ca6702;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+#msg {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#newgame {
+    height: 25px;
+    width: 100px;
+    color: brown;
+    background-color: bisque;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}

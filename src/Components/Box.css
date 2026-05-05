@@ -1,0 +1,15 @@
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    align-items: center;
+    border-radius: 2px;
+    color: crimson;
+    font-size: x-large;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+    .box:disabled {
+        cursor: not-allowed;
+        opacity: 0.9;
+    }
